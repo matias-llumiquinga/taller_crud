@@ -16,6 +16,12 @@ int main (int argc, char *argv[])
             readFacturas();
             break;
         case 3:
+            updateFactura();
+            break;
+        case 4:
+            deleteFactura();
+            break;
+        case 5:
             printf("Saliendo...\n");
             break;
         default:

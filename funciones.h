@@ -8,17 +8,23 @@ struct Producto
 struct Factura
 {
     char nombre[20];
-    float cedula;
+    int cedula;
     int cantidadProductos;
     float total;
     struct Producto productos[5];
+    int activo;
 };
 
 int menu();
 void save(struct Factura *factura);
 void readFacturas();
 void createFactura();
-void leerCadena(char *cadena, int tam);
+int leerCadena(char *cadena, int tam);
+int leerEntero(int *valor);
+
 void imprimirFacturas(struct Factura factura);
 void imprimirDeatalleFactura(struct Factura factura);
 int findFacturaByCedula(int cedula);
+
+void updateFactura();
+void deleteFactura();
