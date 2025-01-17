@@ -33,7 +33,7 @@ void save(struct Factura *factura)
 
 void leerCadena(char *cadena, int tam)
 {
-    fflush(stdin);
+    while (getchar() != '\n');
     fgets(cadena, tam, stdin);
     int len = strlen(cadena) - 1;
     cadena[len] = '\0';
