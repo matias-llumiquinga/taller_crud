@@ -127,7 +127,7 @@ void createFactura()
 
         do
         {
-            printf("Ingrese el precio del producto %d (0<precio>=1000): ", i + 1);
+            printf("Ingrese el precio del producto %d (0<precio<=1000): ", i + 1);
             scanf("%f", &factura.productos[i].precio);
             if (factura.productos[i].precio <= 0 || factura.productos[i].precio > 1000)
             {
@@ -312,7 +312,7 @@ void updateFactura()
 
                 do
                 {
-                    printf("Ingrese el precio del producto %d (0<precio>=1000): ", i + 1);
+                    printf("Ingrese el precio del producto %d (0<precio<=1000): ", i + 1);
                     scanf("%f", &factura.productos[i].precio);
                     if (factura.productos[i].precio <= 0 || factura.productos[i].precio > 1000)
                     {
